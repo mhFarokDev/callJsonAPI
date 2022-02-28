@@ -1,6 +1,6 @@
 let showDevs = document.querySelector('.showDevs');
 let showSingDevs = document.querySelector('.showSingDevs');
-fetch('http://localhost:5050/devs').then(data=> data.json()).then(dvData=>{
+fetch('https://my-json-server.typicode.com/mhfarokdev/json-server/devs').then(data=> data.json()).then(dvData=>{
 
 let allDevData = '';
     dvData.map(coreData =>{
@@ -22,7 +22,7 @@ let allDevData = '';
 
 
 function showdetail(id){
-    fetch('http://localhost:5050/devs/'+id).then(data=> data.json()).then(dvSingData=>{
+    fetch('https://my-json-server.typicode.com/mhfarokdev/json-server/devs'+id).then(data=> data.json()).then(dvSingData=>{
 
         shoModel = `
         <div class="modal-header">
