@@ -22,7 +22,7 @@ let allDevData = '';
 
 
 function showdetail(id){
-    fetch('https://my-json-server.typicode.com/mhfarokdev/json-server/devs'+id).then(data=> data.json()).then(dvSingData=>{
+    fetch('https://my-json-server.typicode.com/mhfarokdev/json-server/devs'+1).then(data=> data.json()).then(dvSingData=>{
 
         shoModel = `
         <div class="modal-header">
